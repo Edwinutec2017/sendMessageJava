@@ -5,10 +5,15 @@
  */
 package Interface;
 
+import java.util.List;
+import javafx.concurrent.Task;
+
 /**
  *
  * @author alex
  */
 public interface IMensage {
-    
+   Boolean AdjuntoArchivo(List<String> ubicacion);
+   Boolean ParametrosDinamicos(Object parametros);
+   Boolean Correo(String asunto, List<String> para, List<String> cc);
 }
